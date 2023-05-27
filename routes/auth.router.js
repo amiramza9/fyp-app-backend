@@ -66,4 +66,40 @@ router.post('/login', async (req, res) => {
     }
 });
 
+router.get('/administrators', (req, res) => {  
+    res.send('Get all administrators');
+  });
+  
+  router.get('/administrators/:administratorId', (req, res) => {
+    const administratorId = req.params.administratorId;
+    // Retrieve a specific administrator by administratorId
+    // ...
+  
+    res.send('Get administrator with administratorId: ${administratorId}');
+  });
+  
+  router.post('/administrators', (req, res) => {
+    // Create a new administrator
+    // ...
+  
+    res.send('Create a new administrator');
+  });
+  
+  router.put('/administrators/:administratorId', (req, res) => {
+    const administratorId = req.params.administratorId;
+    // Update a specific administrator by administratorId
+    // ...
+  
+    res.send('Update administrator with administratorId: ${administratorId}');
+  });
+  
+  router.delete('/administrators/:administratorId', (req, res) => {
+    const administratorId = req.params.administratorId;
+    // Delete a specific administrator by administratorId
+    // ...
+  
+    res.send('Delete administrator with administratorId: ${administratorId}');
+  });
+
+  
 module.exports = router;

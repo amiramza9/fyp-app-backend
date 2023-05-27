@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/fyp-internal-test', {
+mongoose.connect('mongodb+srv://amza:finalapp1@fyp-app.kg5gcet.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
